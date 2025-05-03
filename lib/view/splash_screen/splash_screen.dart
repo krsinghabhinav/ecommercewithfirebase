@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/instance_manager.dart';
 
-import '../../controller/splash_screen/splash_scroll_controller.dart';
+import '../../controller/splash_controller.dart';
 import '../../utils/constants/images_strrings.dart';
 import '../../utils/helpers/helper_function.dart';
 

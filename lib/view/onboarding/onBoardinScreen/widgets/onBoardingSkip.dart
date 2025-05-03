@@ -2,11 +2,11 @@ import 'package:ecommercewithfirebase/utils/constants/custom_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../../../../../common/widgets/customText.dart';
+import '../../../../common/cusotm_widgets/customText.dart';
 import '../../../../../utils/constants/custom_sizes.dart';
 import '../../../../../utils/devices/device_utility.dart';
 import '../../../../../utils/helpers/helper_function.dart';
-import '../../controller onboarding/onboarding_controller.dart';
+import '../../../../controller/onboarding_controller.dart';
 
 class onBoardingSkip extends StatelessWidget {
   const onBoardingSkip({super.key});

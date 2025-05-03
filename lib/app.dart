@@ -2,7 +2,10 @@ import 'package:ecommercewithfirebase/utils/theme/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import 'view/authentication/emailVerification/screen/email_screen.dart';
 import 'view/authentication/login/screen/login_screen.dart';
+import 'view/authentication/signup/screen/signup_screen.dart';
+import 'view/home/home_screen/home_screen.dart';
 import 'view/onboarding/onBoardinScreen/onboarding_screen.dart';
 import 'view/splash_screen/splash_screen.dart';
 import 'test/StudentProfilePage3.dart';
@@ -45,7 +48,7 @@ class App extends StatelessWidget {
       themeMode: ThemeMode.system,
       darkTheme: CustAppTheme.darkTheme,
       theme: CustAppTheme.lightTheme,
-      home: const LoginScreen(),
+      home: HomeScreen(),
     );
   }
 }

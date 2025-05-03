@@ -1,13 +1,15 @@
-import 'dart:ffi';
-
-import 'package:ecommercewithfirebase/common/widgets/CustomeTextFormField.dart';
-import 'package:ecommercewithfirebase/common/widgets/customText.dart';
+import 'package:ecommercewithfirebase/common/cusotm_widgets/CustomeTextFormField.dart';
+import 'package:ecommercewithfirebase/common/cusotm_widgets/customText.dart';
 import 'package:ecommercewithfirebase/utils/constants/custom_texts_string.dart';
 import 'package:ecommercewithfirebase/utils/constants/images_strrings.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_core/get_core.dart';
 import 'package:get/get_navigation/src/extension_navigation.dart';
 import 'package:iconsax/iconsax.dart';
+
+import '../widgets/cLoginForm.dart';
+import '../widgets/cLoginHeader.dart';
+import '../widgets/cSocialButton.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -22,56 +24,43 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SafeArea(
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 20),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Center(
-                child: Image.asset(
-                  CustomImages.loginIcons,
-                  height: Get.height * 0.35,
-                  width: Get.width * 0.8,
+      body: SingleChildScrollView(
+        child: SafeArea(
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 20),
+            child: Column(
+              children: [
+                //loginheader
+                cLoginHeader(),
+
+                SizedBox(height: Get.height * 0.02),
+                //form
+                cLoginForm(formKey: _formKey),
+                SizedBox(height: Get.height * 0.02),
+                //divider
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 40),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Flexible(child: Divider()),
+                      SizedBox(width: Get.width * 0.02),
+
+                      CustomtextWidget(
+                        title: CustomTextsString.orSignWith,
+                        color: Colors.grey,
+                      ),
+                      SizedBox(width: Get.width * 0.02),
+
+                      Flexible(child: Divider()),
+                    ],
+                  ),
                 ),
-              ),
-
-              const SizedBox(height: 20),
-
-              CustomtextWidget(
-                title: CustomTextsString.WelcomeMessage,
-                fontSize: 24,
-                fontWeight: FontWeight.bold,
-              ),
-              const SizedBox(height: 10),
-              CustomtextWidget(
-                title: CustomTextsString.WelcomeMessageDesc,
-                fontSize: 12,
-                fontWeight: FontWeight.w600,
-              ),
-
-              const SizedBox(height: 30),
-
-              Form(
-                key: _formKey,
-                child: Column(
-                  children: [
-                    CustomeTextFormField(
-                      controller: TextEditingController(),
-                      prefixIcon: Icon(Iconsax.direct_right),
-                      labelText: CustomTextsString.email,
-                    ),
-                    SizedBox(height: Get.height * 0.02),
-                    CustomeTextFormField(
-                      controller: TextEditingController(),
-                      prefixIcon: Icon(Iconsax.password_check),
-                      labelText: CustomTextsString.pass,
-                      suffixIcon: Icon(Iconsax.eye_slash),
-                    ),
-                  ],
-                ),
-              ),
-            ],
+                SizedBox(height: Get.height * 0.02),
+                //footer
+                cSocialButton(),
+              ],
+            ),
           ),
         ),
       ),

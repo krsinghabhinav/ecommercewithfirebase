@@ -7,7 +7,7 @@ class CustomtextWidget extends StatelessWidget {
   final double? fontSize;
   final TextAlign? textAlign;
 
-  const CustomtextWidget({
+  const   CustomtextWidget({
     super.key,
     required this.title,
     this.fontWeight,

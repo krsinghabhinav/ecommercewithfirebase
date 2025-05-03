@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:ecommercewithfirebase/view/home_screen/home_screen.dart';
+import 'package:ecommercewithfirebase/view/home/home_screen/home_screen.dart';
 import 'package:ecommercewithfirebase/view/onboarding/onBoardinScreen/onboarding_screen.dart';
 import 'package:flutter/material.dart' show Navigator;
 import 'package:get/get_navigation/get_navigation.dart';

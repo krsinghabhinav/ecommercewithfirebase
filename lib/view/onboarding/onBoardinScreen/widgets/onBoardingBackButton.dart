@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../../../../../utils/constants/custom_sizes.dart';
-import '../../controller onboarding/onboarding_controller.dart';
+import '../../../../controller/onboarding_controller.dart';
 
 class onBoardingBackButton extends StatelessWidget {
   const onBoardingBackButton({super.key});

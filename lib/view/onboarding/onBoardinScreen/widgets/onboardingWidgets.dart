@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 
-import '../../../../../common/widgets/customText.dart';
+import '../../../../common/cusotm_widgets/customText.dart';
 import '../../../../../utils/constants/custom_texts_string.dart';
 import '../../../../../utils/constants/images_strrings.dart';
 import '../../../../../utils/helpers/helper_function.dart';

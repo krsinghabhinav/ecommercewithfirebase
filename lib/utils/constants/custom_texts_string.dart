@@ -16,6 +16,34 @@ class CustomTextsString {
   static const String WelcomeMessage = "Welcome back,";
   static const String WelcomeMessageDesc =
       "Discover Limities Choices and Unmatched Convenience";
-  static const String email = "Email";
+  static const String email = "E-mail";
   static const String pass = "Password";
+  static const String firstName = "First Name";
+  static const String lastName = "Last Name";
+  static const String username = "Username";
+  static const String phonenumber = "Phone Number";
+  static const String rememberMe = "Remember Me";
+  static const String forgetPassword = "Forget Password?";
+  static const String signIn = "SignIn";
+  static const String createAcount = "Create Acount";
+  static const String continuee = "Continue";
+  static const String forgetSubmit = "Submit";
+  static const String orSignWith = "Or Sign in With";
+  static const String iAgreeTo = "I agree to ";
+  static const String privacyPolicy = "Privacy Policy";
+  static const String and = "and";
+  static const String termofuse = "Terms of use";
+  static const String verifyemial = "Verify your email address!";
+  static const String passReset = "Password Reset Email Sent";
+  static const String Resetdone = "Done";
+  static const String passResetSubTitle = "Your Account Security is Our Priority!. We've Sent You a Secure Link to Safely Change Your Password and keep Your Account Protected";
+  static const String forgetpass = "Forget Password";
+  static const String forgetpassSubtitle =
+      "Don't worry sometimes people can forget too, enter your amial and we will send you a password reset link,";
+  static const String reSend = "Resend Email";
+  static const String verifysuccessfully = "Your account successfully created!";
+  static const String verifyemialdes =
+      "Congratulation! Your Account Awalts: Verify Your Email ot Start Shopping and Experience a World of Unrivaled Deals and Personalized Offers,";
+
+  // static const String
 }

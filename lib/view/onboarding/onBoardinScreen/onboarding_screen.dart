@@ -1,4 +1,4 @@
-import 'package:ecommercewithfirebase/common/widgets/customText.dart';
+import 'package:ecommercewithfirebase/common/cusotm_widgets/customText.dart';
 import 'package:ecommercewithfirebase/utils/constants/custom_colors.dart';
 import 'package:ecommercewithfirebase/utils/constants/custom_sizes.dart';
 import 'package:ecommercewithfirebase/utils/constants/custom_texts_string.dart';
@@ -11,7 +11,7 @@ import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 import '../../../../utils/constants/images_strrings.dart';
 import '../../../../utils/helpers/helper_function.dart';
-import '../controller onboarding/onboarding_controller.dart';
+import '../../../controller/onboarding_controller.dart';
 import 'widgets/onBoardingBackButton.dart';
 import 'widgets/onBoardingDotNavigation.dart';
 import 'widgets/onBoardingSkip.dart';
