@@ -36,7 +36,8 @@ class CustomTextsString {
   static const String verifyemial = "Verify your email address!";
   static const String passReset = "Password Reset Email Sent";
   static const String Resetdone = "Done";
-  static const String passResetSubTitle = "Your Account Security is Our Priority!. We've Sent You a Secure Link to Safely Change Your Password and keep Your Account Protected";
+  static const String passResetSubTitle =
+      "Your Account Security is Our Priority!. We've Sent You a Secure Link to Safely Change Your Password and keep Your Account Protected";
   static const String forgetpass = "Forget Password";
   static const String forgetpassSubtitle =
       "Don't worry sometimes people can forget too, enter your amial and we will send you a password reset link,";
@@ -44,6 +45,7 @@ class CustomTextsString {
   static const String verifysuccessfully = "Your account successfully created!";
   static const String verifyemialdes =
       "Congratulation! Your Account Awalts: Verify Your Email ot Start Shopping and Experience a World of Unrivaled Deals and Personalized Offers,";
+  static const String searchtext = "Enter your store";
 
   // static const String
 }

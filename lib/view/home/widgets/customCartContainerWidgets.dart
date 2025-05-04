@@ -3,13 +3,13 @@ import 'package:get/get.dart';
 
 import '../../../utils/constants/custom_colors.dart';
 
-class customCularContainerWidgets extends StatelessWidget {
+class Customcartcontainerwidgets extends StatelessWidget {
   final double? width;
   final double? height;
   final Color? backgroundColor;
   final Widget? child;
   final double? radius;
-  const customCularContainerWidgets({
+  const Customcartcontainerwidgets({
     super.key,
     this.width,
     this.height,

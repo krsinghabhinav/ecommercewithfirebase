@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../../../utils/constants/custom_colors.dart';
-import '../../../view/home/widgets/customCularContainerWidgets.dart';
+import '../../../view/home/widgets/customCartContainerWidgets.dart';
 import 'curved_edges.dart';
 
 class curvedEdgesWidgets extends StatelessWidget {

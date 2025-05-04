@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../../../utils/constants/custom_colors.dart';
-import '../../../view/home/widgets/customCularContainerWidgets.dart';
+import '../../../view/home/widgets/customCartContainerWidgets.dart';
 import 'curvedEdgesWidgets.dart';
 
 class cutomPrimaryHeaderContainer extends StatelessWidget {
@@ -23,7 +23,7 @@ class cutomPrimaryHeaderContainer extends StatelessWidget {
                 top: -150,
                 right: -250,
                 left: Get.width * 0.5,
-                child: customCularContainerWidgets(
+                child: Customcartcontainerwidgets(
                   height: Get.height * 0.45,
                   backgroundColor: CustomColors.textWhite.withOpacity(0.1),
                   radius: Get.height * 0.9,
@@ -33,7 +33,7 @@ class cutomPrimaryHeaderContainer extends StatelessWidget {
                 top: 100,
                 right: -300,
                 left: Get.width * 0.75,
-                child: customCularContainerWidgets(
+                child: Customcartcontainerwidgets(
                   height: Get.height * 0.45,
                   backgroundColor: CustomColors.textWhite.withOpacity(0.1),
                   radius: Get.height * 0.9,
