@@ -16,7 +16,7 @@ class cutomPrimaryHeaderContainer extends StatelessWidget {
         color: CustomColors.primaryColor,
         child: Container(
           width: double.infinity,
-          height: Get.height * 0.5,
+          height: Get.height * 0.4,
           child: Stack(
             children: [
               Positioned(
@@ -39,13 +39,11 @@ class cutomPrimaryHeaderContainer extends StatelessWidget {
                   radius: Get.height * 0.9,
                 ),
               ),
-              Positioned( 
-                
-                child: child!),
+              Positioned(child: child!),
             ],
           ),
         ),
-      ),
+      ),  
     );
   }
 }

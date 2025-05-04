@@ -32,4 +32,16 @@ class CustomImages {
   static const String crossIcon = 'assets/icons/cross.png';
   static const String resetPassTollies =
       'assets/animations/Animation - 1745640650560.json';
+  static const String banner2 = 'assets/banners/banner2.jpg';
+  static const String banner5 = 'assets/banners/banner5.jpeg';
+  static const String banner7 = 'assets/banners/banner7.jpeg';
+  static const String banner11 = 'assets/banners/banners2.jpeg';
+  static const String banner9 = 'assets/banners/banner9.jpg';
+  static const String banner12 = 'assets/banners/banners4.jpeg';
+  static const String banner1 = 'assets/banners/banner1.jpg';
+  static const String banner6 = 'assets/banners/banner6.jpeg';
+  static const String banner3 = 'assets/banners/banner3.jpg';
+  static const String banner8 = 'assets/banners/banner8.jpg';
+  static const String banner10 = 'assets/banners/banner10.jpg';
+  static const String banner13 = 'assets/banners/s.jpg';
 }

@@ -1,7 +1,9 @@
+import 'package:carousel_slider/carousel_slider.dart';
 import 'package:ecommercewithfirebase/common/cusotm_widgets/customAppBar.dart';
 import 'package:ecommercewithfirebase/utils/constants/custom_colors.dart';
 import 'package:ecommercewithfirebase/common/cusotm_widgets/curved_edges/curved_edges.dart';
 import 'package:ecommercewithfirebase/utils/constants/custom_texts_string.dart';
+import 'package:ecommercewithfirebase/utils/constants/images_strrings.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
@@ -10,11 +12,15 @@ import '../../../common/cusotm_widgets/customText.dart';
 import '../../../common/cusotm_widgets/CustomCartCounterIcon.dart';
 import '../../../common/cusotm_widgets/curved_edges/curvedEdgesWidgets.dart';
 import '../../../common/cusotm_widgets/curved_edges/cutomPrimaryHeaderContainer.dart';
+import '../../../common/cusotm_widgets/custom_circular_container.dart';
 import '../../../common/cusotm_widgets/custom_horizontal_vertica_image_text_categ.dart';
+import '../../../common/cusotm_widgets/custom_image_carousels.dart';
 import '../../../common/cusotm_widgets/custom_section_heading.dart';
+import '../widgets/categories_homed.dart';
 import '../widgets/customCartContainerWidgets.dart';
 import '../widgets/custom_home_appbar.dart';
 import '../../../common/cusotm_widgets/custom_search_container.dart';
+import '../widgets/promo_slider_widgets.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -24,18 +30,15 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  final List<Map<String, dynamic>> categories = [
-    {'name': 'Grocery', 'icon': Iconsax.shopping_bag},
-    {'name': 'Electronics', 'icon': Iconsax.cpu},
-    {'name': 'Fashion', 'icon': Iconsax.shop},
-    {'name': 'Home', 'icon': Iconsax.home},
-    {'name': 'Beauty', 'icon': Iconsax.magicpen},
-    {'name': 'Toys', 'icon': Iconsax.game},
-    {'name': 'Books', 'icon': Iconsax.book},
-    {'name': 'Fitness', 'icon': Iconsax.activity},
-    {'name': 'Stationery', 'icon': Iconsax.pen_add},
-    {'name': 'Pet Supplies', 'icon': Iconsax.lovely},
+  final List<String> bannerImages = [
+    'assets/banners/banner1.jpg',
+    'assets/banners/banner2.jpg',
+    'assets/banners/banner3.jpg',
+    'assets/banners/banner5.jpeg',
+    'assets/banners/banner6.jpeg',
+    'assets/banners/banner7.jpeg',
   ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -72,30 +75,19 @@ class _HomeScreenState extends State<HomeScreen> {
                       ],
                     ),
                   ),
+                  //CATEGORIES
+                  CategoriesHome(),
 
-                  Flexible(
-                    child: ListView.builder(
-                      itemCount: categories.length,
-                      shrinkWrap: true,
-                      scrollDirection: Axis.horizontal,
-                      itemBuilder: (context, index) {
-                        var category = categories[index];
-                        return CustomHorizontalVerticalImageText(
-                          title: category['name'],
-                          icons: category['icon'],
-                          textColors: CustomColors.white,
-                          onTap: () {
-                            print("categories==${category['name']}");
-                          },
-                        );
-                      },
-                    ),
-                  ),
+                  //carousel slider
                 ],
               ),
             ),
           ),
           // const Expanded(child: Placeholder()),
+          Padding(
+            padding: const EdgeInsets.all(12.0),
+            child: PromoSliderWidgets(bannerImages: bannerImages),
+          ),
         ],
       ),
     );
