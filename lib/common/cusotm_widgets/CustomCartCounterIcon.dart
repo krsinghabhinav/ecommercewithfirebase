@@ -8,7 +8,8 @@ import '../../utils/constants/custom_colors.dart';
 class CustomCartCounterIcon extends StatelessWidget {
   final Color? iconsColor;
   final VoidCallback? onPressed;
-  const CustomCartCounterIcon({super.key, this.iconsColor, this.onPressed});
+  final String? title;
+  const CustomCartCounterIcon({super.key, this.iconsColor, this.onPressed, this.title});
 
   @override
   Widget build(BuildContext context) {
@@ -30,7 +31,7 @@ class CustomCartCounterIcon extends StatelessWidget {
             ),
             child: Center(
               child: CustomtextWidget(
-                title: "99",
+                title: title ?? "",
                 fontSize: 10,
                 color: CustomColors.white,
               ),

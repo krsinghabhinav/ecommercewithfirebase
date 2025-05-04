@@ -10,6 +10,7 @@ import '../../../common/cusotm_widgets/CustomCartCounterIcon.dart';
 import '../../../common/cusotm_widgets/curved_edges/curvedEdgesWidgets.dart';
 import '../../../common/cusotm_widgets/curved_edges/cutomPrimaryHeaderContainer.dart';
 import '../widgets/customCularContainerWidgets.dart';
+import '../widgets/custom_home_appbar.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -31,32 +32,7 @@ class _HomeScreenState extends State<HomeScreen> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                CustomAppBar(
-                  title: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      CustomtextWidget(
-                        title: "Good day for shopping",
-                        fontSize: 12,
-                        color: CustomColors.white,
-                      ),
-                      CustomtextWidget(
-                        title: "Abhinav Kumar Singh",
-                        color: CustomColors.white,
-                      ),
-                    ],
-                  ),
-                  bgColor: Colors.transparent,
-                  actions: [
-                    CustomCartCounterIcon(
-                      onPressed: () {
-                        print("cart increses ");
-                      },
-                      iconsColor: CustomColors.white,
-                    ),
-                    SizedBox(width: Get.width * 0.02),
-                  ], // or remove this line now since default is transparent
-                ),
+                CustomHomeAppBar(),
               ],
             ),
           ),
