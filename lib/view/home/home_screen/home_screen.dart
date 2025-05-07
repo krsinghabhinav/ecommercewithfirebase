@@ -15,6 +15,7 @@ import '../../../common/cusotm_widgets/curved_edges/cutomPrimaryHeaderContainer.
 import '../../../common/cusotm_widgets/custom_circular_container.dart';
 import '../../../common/cusotm_widgets/custom_horizontal_vertica_image_text_categ.dart';
 import '../../../common/cusotm_widgets/custom_image_carousels.dart';
+import '../../../common/cusotm_widgets/custom_product_card_vertical.dart';
 import '../../../common/cusotm_widgets/custom_section_heading.dart';
 import '../widgets/categories_homed.dart';
 import '../widgets/customCartContainerWidgets.dart';
@@ -85,9 +86,10 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
           // const Expanded(child: Placeholder()),
           Padding(
-            padding: const EdgeInsets.all(12.0),
+            padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 2),
             child: PromoSliderWidgets(bannerImages: bannerImages),
           ),
+          CustomProductCardVertical(),
         ],
       ),
     );

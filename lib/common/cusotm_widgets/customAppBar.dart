@@ -9,7 +9,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   final Color? textColor;
   final double? fontSize;
   final FontWeight? fontWeight;
-  final bool? showBackButton;
+  final bool showBackButton;
   final VoidCallback? leadingOnPressed;
   final List<Widget>? actions;
   final IconData? leadingIcon;
@@ -21,7 +21,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
     this.textColor,
     this.fontSize,
     this.fontWeight,
-    this.showBackButton ,
+    this.showBackButton = false,
     this.leadingOnPressed,
     this.actions,
     this.leadingIcon,
@@ -38,7 +38,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
           bgColor ?? Colors.transparent, // make it transparent by default
       automaticallyImplyLeading: false,
       leading:
-          showBackButton == true
+          showBackButton
               ? IconButton(
                 icon: const Icon(Icons.arrow_left),
                 onPressed:

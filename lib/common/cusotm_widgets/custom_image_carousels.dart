@@ -1,30 +1,28 @@
-
 import 'package:flutter/material.dart';
 
-class CustomRoundedImagesCarousel extends StatelessWidget {
+class CustomRoundedImages extends StatelessWidget {
   final double? width, height;
-  final String? imageUrl;
-  
+  final String imageUrl; // Made non-nullable
   final bool applyImagesRadius;
   final BoxBorder? border;
-  final BoxFit? fit;
+  final BoxFit fit;
   final EdgeInsetsGeometry? padding;
   final bool isNetworkImage;
   final VoidCallback? onPressed;
-  final double? borderRadius;
-  const CustomRoundedImagesCarousel({
+  final double borderRadius;
+
+  const CustomRoundedImages({
     super.key,
     this.applyImagesRadius = false,
     this.border,
-    this.fit,
+    this.fit = BoxFit.cover, // Default fit
     this.height,
     this.width,
-    this.imageUrl,
+    required this.imageUrl, // Required to avoid null
     this.isNetworkImage = false,
     this.onPressed,
     this.padding,
-    this.borderRadius,
-   
+    this.borderRadius = 12.0, // Default radius
   });
 
   @override
@@ -35,19 +33,17 @@ class CustomRoundedImagesCarousel extends StatelessWidget {
         height: height,
         width: width,
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(borderRadius!),
+          borderRadius: BorderRadius.circular(borderRadius),
         ),
         child: ClipRRect(
-          borderRadius:
-              applyImagesRadius
-                  ? BorderRadius.circular(borderRadius!)
-                  : BorderRadius.circular(0),
+          borderRadius: applyImagesRadius
+              ? BorderRadius.circular(borderRadius)
+              : BorderRadius.circular(0),
           child: Image(
-            image:
-                isNetworkImage
-                    ? NetworkImage(imageUrl!)
-                    : AssetImage(imageUrl!),
-            fit: fit!,
+            image: isNetworkImage
+                ? NetworkImage(imageUrl)
+                : AssetImage(imageUrl) as ImageProvider,
+            fit: fit,
           ),
         ),
       ),

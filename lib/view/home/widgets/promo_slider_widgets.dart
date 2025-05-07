@@ -20,7 +20,7 @@ class PromoSliderWidgets extends StatelessWidget {
         CarouselSlider(
           items:
               bannerImages.map((imagePath) {
-                return CustomRoundedImagesCarousel(
+                return CustomRoundedImages(
                   imageUrl: imagePath,
                   borderRadius: 15,
                   width: double.infinity,
